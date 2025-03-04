@@ -4,6 +4,20 @@ Create beautiful tag/word clouds using React.
 
 ## [Unreleased]
 
+### Overhaul
+
+- removed yarn
+- added pnpm
+- moved example directory into separate project
+- updated all dependencies
+- replaced tslint with eslint
+- added linting and security checks workflows
+- added changesets for future publishing workflow
+- moved repo docs into .github directory
+- linting passes with warnings
+- workflows yamls pass KICS
+- build completes with no errors
+
 ## [1.3.2] - 2019-03-20
 
 ### Fixed
