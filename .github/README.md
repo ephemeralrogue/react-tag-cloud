@@ -7,7 +7,7 @@ If you are interested in maintaining this repository (and taking ownership of it
 # react-tag-cloud ☁️
 Create beautiful tag/word clouds using React. Uses the wonderful [d3-cloud](https://github.com/jasondavies/d3-cloud) under the hood.
 
-![react-tag-cloud-image](./react-tag-cloud.gif)
+![react-tag-cloud-image](./assets/react-tag-cloud.gif)
 
 
 [View live demo here](https://react-tag-cloud.stackblitz.io/) [(edit code)](https://stackblitz.com/edit/react-tag-cloud?file=App.js)
@@ -15,9 +15,18 @@ Create beautiful tag/word clouds using React. Uses the wonderful [d3-cloud](http
 
 ## Installation
 
-	npm install react-tag-cloud
-	or
-	yarn add react-tag-cloud
+via npm
+```sh
+npm install react-tag-cloud
+```
+via yarn
+```sh
+yarn add react-tag-cloud
+```
+via pnpm
+```sh
+pnpm add react-tag-cloud
+```
 
 ## Usage
 
@@ -26,26 +35,26 @@ import TagCloud from 'react-tag-cloud';
 import randomColor from 'randomcolor';
 
 class MyCloud extends Component {
-  render() {
-    return (
-      <TagCloud 
-        style={{
-          fontFamily: 'sans-serif',
-          fontSize: 30,
-          fontWeight: 'bold',
-          fontStyle: 'italic',
-          color: () => randomColor(),
-          padding: 5,
-          width: '100%',
-          height: '100%'
-        }}>
-        <div style={{fontSize: 50}}>react</div>
-        <div style={{color: 'green'}}>tag</div>
-        <div rotate={90}>cloud</div>
-        ...
-      </TagCloud>
-    );
-  }
+	render() {
+		return (
+			<TagCloud 
+				style={{
+					fontFamily: 'sans-serif',
+					fontSize: 30,
+					fontWeight: 'bold',
+					fontStyle: 'italic',
+					color: () => randomColor(),
+					padding: 5,
+					width: '100%',
+					height: '100%'
+				}}>
+				<div style={{fontSize: 50}}>react</div>
+				<div style={{color: 'green'}}>tag</div>
+				<div rotate={90}>cloud</div>
+				...
+			</TagCloud>
+		);
+	}
 }
 ```
 
@@ -80,7 +89,7 @@ rotate | Rotation in degrees | Function/Number | `0`
 
 ## Examples
 
-- [(Playground on StackBlitz)](https://stackblitz.com/edit/react-tag-cloud?file=App.js) [(source)](./examples/tagCloud/src/App.js) 
+- [Playground on StackBlitz](https://stackblitz.com/edit/react-tag-cloud?file=App.js) [(source)](./examples/tagCloud/src/App.js) 
 - [ijzerenhein.nl](http://ijzerenhein.nl/)
 
 
@@ -92,7 +101,7 @@ rotate | Rotation in degrees | Function/Number | `0`
 
 ## License
 
-[MIT](./LICENSE.txt)
+[MIT](./.github/LICENSE)
 
 
 ## Cool?
